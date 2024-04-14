@@ -1,0 +1,369 @@
+@import url('https://fonts.cdnfonts.com/css/magic-school-one');
+@import url('https://fonts.cdnfonts.com/css/parry-hotter');
+@import url('https://fonts.cdnfonts.com/css/harrypotter7');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Magic School One', sans-serif;
+}
+
+body {
+    background-image: url(https://www.pluggedin.com/wp-content/uploads/2023/02/hogwarts-legacy.jpg);
+    /* background-image: url(https://i.pinimg.com/originals/ae/8a/ae/ae8aae9b2a7bcc5c9cc7e13ccf8088d1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    font-family: 'Parry Hotter', sans-serif;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    text-shadow: #fc0 10px 10px 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 2px;
+}
+
+.formularioIniciacion {
+    display: flex;
+    flex-direction: column;
+
+    color: black;
+    text-shadow: #fc0 1px 0 10px;
+    font-size: 25px;
+}
+
+
+.columnas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 35px;
+}
+
+.columnasImg {
+    width: 20%;
+    height: 30%;
+
+}
+
+.columnas input {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.columnas input:hover {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    box-shadow: 10px 10px 10px#fc0;
+    text-shadow: #fc0 1px 0 10px;
+}
+
+
+.columnaCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .front h3 {
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    background: rgba(255, 255, 255, 0.209);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-shadow: white 1px 0 10px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+#card1 {
+    color: black;
+    text-shadow: black 1px 0 10px;
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(244, 123, 11, 1) 60%, rgba(0, 0, 0, 1) 98%);
+}
+
+#card2 {
+    color: black;
+    text-shadow: black 1px 0 10px;
+    background: rgb(236, 255, 0);
+    background: radial-gradient(circle, rgba(236, 255, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+#card3 {
+    color: black;
+    text-shadow: black 1px 0 10px;
+    background: rgb(205, 127, 50);
+    background: radial-gradient(circle, rgba(205, 127, 50, 1) 0%, rgba(0, 0, 255, 1) 100%);
+}
+
+
+#card4 {
+    color: black;
+    text-shadow: black 1px 0 10px;
+    background: rgb(0, 128, 0);
+    background: radial-gradient(circle, rgba(0, 128, 0, 1) 23%, rgba(190, 190, 176, 1) 73%, rgba(0, 0, 0, 1) 92%);
+}
+
+.casa {
+    cursor: pointer;
+}
+
+.formulario {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    color: black;
+    text-shadow: black 1px 0 10px;
+    border-radius: 12px;
+}
+
+.formulario:hover {
+    background-color: black;
+    color: #fc0;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    box-shadow: 0 5px 10px #fc0;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+#botonRegistro {
+    background-color: #fc0;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+}
+
+
+#botonRegistro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, yellow, blue, green,
+            red, yellow, blue, green);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+#mensajeCasa {
+    display: none;
+
+}
+
+.mensaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 310%;
+    box-shadow: 0px 1px 10px #fc0;
+    background-color: rgba(255, 255, 255, 0.552);
+    transition: all 400ms ease;
+}
+
+.mensaje p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    line-height: 2;
+    color: black;
+    padding: 5px;
+}
+
+#mensajeCasa img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    padding: 5%;
+}
+
+#botonContinuar {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+}
+
+#botonContinuar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, yellow, blue, green,
+            red, yellow, blue, green);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.titulo2 {
+    font-family: 'Parry Hotter', sans-serif;
+    font-size: 6vw;
+    font-weight: 300;
+    padding: 4%;
+    color: black;
+    text-align: center;
+    text-shadow: greenyellow 10px 10px 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: greenyellow;
+    letter-spacing: 2px;
+}
+
+.informacionEstudiante {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 1px 10px greenyellow;
+    background-color: rgba(255, 255, 255, 0.552);
+    transition: all 400ms ease;
+}
+
+.informacionEstudiante p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    line-height: 2;
+    color: black;
+    padding: 5px;
+}
+
+
+#generarAnimalPatronus {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+}

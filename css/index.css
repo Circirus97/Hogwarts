@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/magic-school-one');
+@import url('https://fonts.cdnfonts.com/css/parry-hotter');
+@import url('https://fonts.cdnfonts.com/css/harrypotter7');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Magic School One', sans-serif;
+}
+
+body {
+    background-image: url(https://www.pluggedin.com/wp-content/uploads/2023/02/hogwarts-legacy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    font-family: 'Parry Hotter', sans-serif;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    text-shadow: black 1px 0 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+    letter-spacing: 2px;
+}
+
+.titulo:hover {
+    font-size: 130px;
+    color: white;
+    text-align: center;
+    text-shadow: #fc0 10px 10px 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 2px;
+}
+
+.textoBienvenida {
+    display: flex;
+    font-weight: 200;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: #fc0 1px 0 10px;
+    letter-spacing: 2px;
+
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+
+}
+
+#botonIngresar {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.083);
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 300px;
+    cursor: pointer;
+    border: 1% ridge gold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.boton :hover {
+    color: #fc0;
+    text-shadow: black 1px 0 10px;
+}
+
+#botonIngresar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, yellow, blue, green,
+            red, yellow, blue, green);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+
+
+.pie img{
+    height: 100%;
+    width: 100%;
+
+}

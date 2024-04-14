@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel=icon href="https://i.pinimg.com/236x/96/da/2c/96da2c9bf5c94a55a03397ef4494e0b1.jpg">
+
+</head>
+
+<body>
+
+    <h1 class="titulo">Bienvenido a Hogwarts!</h1>
+
+    <div class="contenedorBase">
+
+        <div class="formularioIniciacion">
+
+            <div class="columnas">
+
+                <img class="columnasImg" src="wizarding-world-portrait.png" alt="">
+
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre completo: ">
+                <input type="number" id="edad" placeholder="Ingresa tu edad: ">
+
+
+            </div>
+
+            <div class="columnas">
+
+                <form>
+                    <select class="formulario" id="seleccionLinaje">
+                        <option selected hidden>Linaje</option>
+                        <option value="sangrePura">Sangre Pura</option>
+                        <option value="mestizo">Mestizo</option>
+                        <option value="muggle">Muggle</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="columnaCards">
+
+                <div class="card">
+
+                    <button class="casa" id="boton1">
+                        <div class="face front">
+
+
+                            <img src="https://i.pinimg.com/236x/96/da/2c/96da2c9bf5c94a55a03397ef4494e0b1.jpg"
+                                alt="La fabula de los tres hermanos y las reliquias de la muerte">
+                            <h3>Cualidades</h3>
+
+                        </div>
+
+                        <div class="face back" id="card1">
+
+                            <p>
+                                Tu corazón late con valentía, anhelas aventuras
+                                intrépidas y tienes la fuerza para enfrentar desafíos con
+                                audacia.
+                            </p>
+                        </div>
+
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <button class="casa" id="boton2">
+
+                        <div class="face front">
+                            <img src="https://i.pinimg.com/564x/85/ad/bd/85adbdb127cedf3a88f1e73d7cfe4f72.jpg"
+                                alt="Severus Snap invocando su patronus">
+                            <h3>Cualidades</h3>
+                        </div>
+
+                        <div class="face back" id="card2">
+                            <p>
+                                ¿Eres leal, paciente y amable, tu espíritu brilla con
+                                honestidad y trabajas arduamente?
+                            </p>
+                        </div>
+
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <button class="casa" id="boton3">
+
+                        <div class="face front">
+                            <img src="https://i.pinimg.com/564x/5a/db/5b/5adb5bf2de401a34631975e685789049.jpg"
+                                alt="Carta bienvenido a hogwarts">
+                            <h3>Cualidades</h3>
+                        </div>
+
+                        <div class="face back" id="card3">
+                            <p>
+                                ¿La sabiduría y la creatividad son tus compañeras constantes?,
+                                la inteligencia y la originalidad son tus aliadas aquí.
+                            </p>
+                        </div>
+
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <button class="casa" id="boton4">
+
+                        <div class="face front">
+                            <img src="https://i.pinimg.com/564x/2e/d6/55/2ed6559b28627205500f748ab464f36a.jpg"
+                                alt="Mapa del merodeador">
+                            <h3>Cualidades</h3>
+                        </div>
+
+                        <div class="face back" id="card4">
+                            <p>
+                                ¿La ambición y astucia corren por tus venas? Aquí, el camino hacia la
+                                grandeza personal se construye con ambición.
+                            </p>
+                        </div>
+
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="boton">
+
+            <button id="botonRegistro" onclick="mostrar()">Registro</button>
+
+        </div>
+
+        <br>
+
+        <div class="mensajes" id="mensajeCasa">
+
+
+            <div class="mensaje">
+
+                <figure>
+                    <img src="https://i.pinimg.com/564x/b5/c2/5f/b5c25fd4428c9af7f5bbf712c899cc91.jpg"
+                        alt="sombrero seleccionador">
+                </figure>
+
+                <p id="textoMensajeCasa">
+
+                </p>
+                <br>
+
+            </div>
+            <br>
+
+            <button id="botonContinuar">
+                <a href="#claseDefensa">Ir a clases</a>
+            </button>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div class="claseDefensa" id="claseDefensa">
+
+            <h2 class="titulo2">Clase de defensa contra artes oscuras.
+                <!-- <img class="columnasImg" src="https://i.pinimg.com/564x/61/34/cd/6134cd9ea5950734a33b22b8b92114e5.jpg"
+                alt="Severus Snape"> -->
+            </h2>
+
+            <div class="columnas">
+
+                
+                <div class="informacionEstudiante">
+                    
+
+
+                    <p id="nombreEstudiante">
+
+
+                    </p>
+               
+    
+                    <p id="edadEstudiante">
+    
+                    </p>
+               
+    
+                    <p id="linajeEstudiante">
+    
+                    </p>
+                  
+    
+                    <p id="casaEstudiante">
+    
+                    </p>
+
+                    <p id="cualidadesEstudiante">
+    
+                    </p>
+
+                </div>
+                
+
+            </div>
+
+            <br><br><br>
+
+            <div class="boton">
+
+                <button id="generarAnimalPatronus" onclick="mostrar();">Generar animal Patronus</button>
+
+            </div>
+
+            <br>
+
+            <!-- <div class="" id="animalPatronus">
+
+                <div class="mensaje">
+
+                    <p id="textoAnimalPatronus">
+
+                    </p>
+
+                    <br>
+
+                </div>
+
+                <br>
+
+                <button id="botonContinuar">
+                    <a href="">Ir a clases</a>
+                </button>
+            </div> -->
+
+        </div>
+
+        <br>
+        <hr><br>
+
+
+
+    </div>
+
+    <script src="js/usuario.js"></script>
+
+</body>
+
+</html>
